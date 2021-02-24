@@ -35,7 +35,7 @@ const Textarea: FC<TextareaProps> = ({value, onChange, autofocus}) => {
     document.addEventListener("click", focus)
 
     return () => document.removeEventListener("click", focus)
-  }, [])
+  }, [autofocus])
 
   const handleChange: ChangeEventHandler<HTMLTextAreaElement>
     = useCallback(e => void onChange(e.target.value), [onChange])
