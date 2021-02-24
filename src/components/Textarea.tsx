@@ -12,12 +12,30 @@ export type TextareaProps = PropsWithChildren<{
 const Textarea: FC<TextareaProps> = ({value, onChange, autofocus}) => {
 
   const ref = useRef<HTMLTextAreaElement>(null)
-  //const [input, setInput] = useState<HTMLTextAreaElement>()
-
 
   useEffect(() => {
-    autofocus && ref.current?.focus()
+    const node = ref.current
+    if (node && autofocus) {
+      node.setAttribute("autofocus", "autofocus")
+      node.focus()
+      node.click()
+    }
   }, [autofocus])
+
+  useEffect(() => {
+    function focus() {
+      const node = ref.current
+
+      if (node && autofocus) {
+        node.focus()
+        node.click()
+      }
+    }
+
+    document.addEventListener("click", focus)
+
+    return () => document.removeEventListener("click", focus)
+  }, [])
 
   const handleChange: ChangeEventHandler<HTMLTextAreaElement>
     = useCallback(e => void onChange(e.target.value), [onChange])

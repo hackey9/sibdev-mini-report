@@ -2,9 +2,8 @@
   display: inline-grid;
   grid-template-columns: 1fr;
   grid-auto-rows: auto;
-  grid-row-gap: 80px;
 
-  padding: 150px;
+  padding: 150px 50px 50px 211px;
 }
 
 @media (max-width: 1000px) {
@@ -13,7 +12,5 @@
     display: grid;
 
     padding: 20px;
-
-    grid-row-gap: 30px;
   }
 }

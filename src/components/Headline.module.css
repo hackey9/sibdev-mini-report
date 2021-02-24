@@ -4,8 +4,8 @@
 }
 
 .headline > .name {
-  color: #f00;
-  margin-bottom: 20px;
+  color: #bd0000;
+  line-height: 81px;
 }
 
 .headline > .text {
@@ -16,6 +16,10 @@
 
 @media (max-width: 1000px) {
   .headline {
-    font-size: 32px;
+    font-size: 40px;
+  }
+
+  .headline > .name {
+    line-height: 50px;
   }
 }

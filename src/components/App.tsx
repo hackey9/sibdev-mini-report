@@ -31,7 +31,7 @@ const App: FC = () => {
   return (
     <Layout>
       {!isPageResult ? <>
-        <Headline name={"Зайка,"} children={"Изложи свою проблему"}/>
+        <Headline name={"Зайка,"} children={"изложи свою проблему"}/>
         <Textarea value={text} onChange={setText} autofocus/>
         <Button onClick={handleSend} />
       </> : <>

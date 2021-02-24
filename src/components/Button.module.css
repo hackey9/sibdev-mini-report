@@ -1,16 +1,16 @@
 .button {
   border: none;
   outline: none;
-  background-color: #f00;
-  color: #fff;
+  background-color: #bd0000;
+  color: #fefefe;
   font-family: "MinionPro", sans-serif;
   border-radius: 4px;
-  height: 60px;
-  font-size: 32px;
+  height: 85px;
+  font-size: 60px;
 
   cursor: pointer;
 
-  padding: 0 20px;
+  padding: 0 32px;
   display: inline-block;
   justify-self: start;
 }

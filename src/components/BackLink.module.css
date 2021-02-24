@@ -10,6 +10,8 @@
   justify-self: start;
 
   cursor: pointer;
+
+  margin-top: 56px;
 }
 
 .back > .icon {
@@ -18,8 +20,8 @@
   background-size: contain;
   background-position: center;
   background-origin: content-box;
-  width: 32px;
-  height: 32px;
+  width: 42px;
+  height: 42px;
 
   margin-right: 20px;
 
@@ -32,12 +34,11 @@
 
 .back > .text {
   user-select: none;
-  color: #aaa;
+  color: #888;
   font-family: "MinionPro", sans-serif;
-  font-size: 28px;
+  font-size: 42px;
 
-  padding: 1px 0;
-  border-bottom: 2px solid #aaa;
+  border-bottom: 2px solid #888;
 }
 
 @media (max-width: 1000px) {
