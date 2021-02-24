@@ -10,3 +10,12 @@ body {
   position: relative;
   box-sizing: border-box;
 }
+
+
+@font-face {
+  font-family: 'MinionPro';
+  src: url('/src/fonts/MinionProRegular.otf');
+  src: url('/src/fonts/MinionProRegular.otf') format('opentype');
+  font-style: normal;
+  font-weight: normal;
+}
