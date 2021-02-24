@@ -1,0 +1,47 @@
+.back {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+
+  height: 30px;
+
+  justify-self: start;
+
+  cursor: pointer;
+}
+
+.back > .icon {
+  background-image: url("resources/rotate-icon.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-origin: content-box;
+  width: 32px;
+  height: 32px;
+
+  margin-right: 20px;
+
+  transition: all 0.4s ease-out;
+}
+
+.back:hover > .icon {
+  transform: rotate(-360deg);
+}
+
+.back > .text {
+  user-select: none;
+  color: #aaa;
+  font-family: "MinionPro", sans-serif;
+  font-size: 28px;
+
+  padding: 1px 0;
+  border-bottom: 2px solid #aaa;
+}
+
+@media (max-width: 1000px) {
+  .back > .text {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,14 @@
+.textarea {
+
+}
+
+
+.textarea > .input {
+  display: block;
+  width: 100%;
+
+  border: none;
+  resize: none;
+
+  outline: none;
+}
