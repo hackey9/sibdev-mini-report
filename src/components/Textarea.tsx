@@ -24,8 +24,15 @@ const Textarea: FC<TextareaProps> = ({value, onChange, autofocus}) => {
 
   return (
     <div className={css.textarea}>
-      {/* @ts-ignore */}
-      <TextareaAutosize width={"100%"} className={css.input} ref={ref} value={value} onChange={handleChange}/>
+      <TextareaAutosize
+        width={"100%"}
+        className={css.input}
+        // @ts-ignore
+        ref={ref}
+        value={value}
+        onChange={handleChange}
+        autoFocus
+      />
     </div>
   )
 }
