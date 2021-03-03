@@ -3,7 +3,13 @@
   grid-template-columns: 1fr;
   grid-auto-rows: auto;
 
-  padding: 150px 50px 50px 211px;
+  padding: 150px 50px 50px 15vw;
+}
+
+@media (max-width: 1500px) {
+  .layout {
+    padding: 4vw 50px 50px 15vw;
+  }
 }
 
 @media (max-width: 1000px) {

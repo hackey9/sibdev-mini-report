@@ -13,6 +13,16 @@
 }
 
 
+@media (max-width: 1500px) {
+  .headline {
+    font-size: 5vw;
+  }
+
+  .headline > .name {
+    line-height: 6vw;
+  }
+}
+
 
 @media (max-width: 1000px) {
   .headline {
