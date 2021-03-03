@@ -5,15 +5,17 @@ import css from "./Header.module.css"
 
 const Header: FC = () => {
 
+  const url = "https://vk.com/ungs_music"
+
   return (
-    <div className={css.block}>
+    <a className={css.block} href={url} target="_blank" rel="noreferrer" >
       {"Создано "}
-      <Link url={"https://vk.com/ungs_music"}>Ungs</Link>
+      <Link>Ungs</Link>
       {" с любовью и заботой"}
-    </div>
+    </a>
   )
 }
 export default Header
 
 
-const Link: FC<{ url: string }> = ({children, url}) => <a href={url} target="_blank" rel="noreferrer" className={css.link}>{children}</a>
+const Link: FC = ({children}) => <span className={css.link}>{children}</span>
