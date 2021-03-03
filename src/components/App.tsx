@@ -1,5 +1,6 @@
 import BackLink from "components/BackLink"
 import Button from "components/Button"
+import Header from "components/Header"
 import Headline from "components/Headline"
 import Layout from "components/Layout"
 import Textarea from "components/Textarea"
@@ -28,7 +29,8 @@ const App: FC = () => {
     setIsPageResult(false)
   }, [])
 
-  return (
+  return (<>
+    <Header/>
     <Layout>
       {!isPageResult ? <>
         <Headline name={"Зайка,"} children={"изложи свою проблему"}/>
@@ -39,6 +41,6 @@ const App: FC = () => {
         <BackLink onClick={handleBack}/>
       </>}
     </Layout>
-  )
+  </>)
 }
 export default App
